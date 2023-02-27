@@ -9,5 +9,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['bootstrap'],
   },
-  base: "/",
+  base: "/test/",
 });
