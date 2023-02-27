@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter } from 'vue-router';
 
 const routes = [
     {
@@ -36,7 +36,8 @@ const routes = [
 
 const router = createRouter({
   //some changes
-  history: createWebHistory(),
+  //history: createWebHistory(),
+  base: process.env.BASE_URL,
   routes,
   mode: 'hash'
 });
